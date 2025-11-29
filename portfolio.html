@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body class="light">
+    <div class="container">
+        <!---------------Navbar---------------->
+        <nav class="navbar sticky">
+            <div class="box theme">
+                <div class="item" onclick="theme()">
+                    <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+                    <ion-icon id="darkBtn" name="moon-outline" style="display: none;"></ion-icon>
+                </div>
+            </div>
+            <div class="box nav">
+                <div class="item active">
+                    <a href="#about">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p>A propos de moi</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#resume">
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                        <p>Résumé</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#projects">
+                        <ion-icon name="layers-outline"></ion-icon>
+                        <p>Projets</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#blogs">
+                        <ion-icon name="reader-outline"></ion-icon>
+                        <p>Blogs</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#contact">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <p>Contact</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-------------Profile------------------>
+
+        <div class="box profile">
+            <img class="header" src="img/p.jpg" alt="">
+            <img class="img" src="img/avt.png" alt="">
+            <h2>Romane YETOR</h2>
+            <p id="typed" class="colored">Developpeur Web & Mobile</p>
+
+            <ul>
+                <li><a href="https://github.com/ROMLES-007" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://facebook.com/romles.yetor" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/rom_golden" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://linkedin.com/in/romane-yetor" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+
+            <div class="footer">
+                <div class="divider rtl"></div>
+                <table>
+                    <tr>
+                        <td><a href="#resume">Mes Expériences<ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+                        <td><a href="#contact">Contact Moi<ion-icon name="call-outline"></ion-icon></a></td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </div>
+
+        <!-----------content------------>
+
+        <div class="box content">
+            <div class="wrapper">
+                <h2 id="about">Hello <span class="colored">Tout le monde</span> 👋</h2>
+                <div class="divider ltr"></div>
+                <p>Je suis développeur web et mobile passionné, spécialisé dans la création de sites modernes et
+                    fonctionnels et d'applications.
+                    Curieux et méthodique, j'aime transformer des idées en solutions concrètes grâce à des technologies
+                    comme <span class="colored">HTML, CSS, JavaScript et des outils backend tels que Firebase et SQL.
+                </p>
+                <!-----------Achivement-------------->
+                <section class="achivements">
+                    <div>
+                        <h3><ion-icon name="layers-outline"></ion-icon>10+</h3>
+                        <p>Projets réalisés</p>
+                    </div>
+                    <div>
+                        <h3><ion-icon name="briefcase-outline"></ion-icon>4+</h3>
+                        <p>Mois d'expériences</p>
+                    </div>
+                    <div>
+                        <h3><ion-icon name="happy-outline"></ion-icon>5+</h3>
+                        <p>Clients satisfaits</p>
+                    </div>
+                </section>
+
+                <!--------------Skills---------------->
+                <h2>Mes <span class="colored">compétences</span></h2>
+                <div class="divider ltr"></div>
+
+                <section class="skills">
+                    <div><ion-icon name="logo-html5"></ion-icon>
+                        <p>HTML</p>
+                    </div>
+                    <div><ion-icon name="logo-css3"></ion-icon>
+                        <p>CSS</p>
+                    </div>
+                    <div><ion-icon name="logo-javascript"></ion-icon>
+                        <p>JavaScript</p>
+                    </div>
+                    <div><ion-icon name="logo-python"></ion-icon>
+                        <p>Python</p>
+                    </div>
+                    <div>
+                        <div class="circle" style="--percent:65%">
+                            <h4>65<small>%</small></h4>
+                        </div>
+                        <p>MySQL</p>
+                    </div>
+                    <div>
+                        <div class="circle" style="--percent:85%">
+                            <h4>85<small>%</small></h4>
+                        </div>
+                        <p>MySQL</p>
+                    </div>
+                    <div>
+                        <div class="progress-bar">
+                            <p>Node Js <span>90%</span></p>
+                            <progress max="100" value="90"></progress>
+                        </div>
+                        <div class="progress-bar">
+                            <p>PostgreSQL <span>75%</span></p>
+                            <progress max="100" value="75"></progress>
+                        </div>
+                    </div>
+                </section>
+
+                <!----------------Experience----------------->
+
+                <h2 id="resume"> Mon <span class="colored">Expérience</span></h2>
+                <div class="divider ltr"></div>
+
+                <section class="experiences">
+                    <div class="experience">
+                        <h2>Développeur Java/Python</h2>
+                        <h4>Romles Company <span class="date">Oct, 2020</span> &#x26ac; <span class="date">Dec,
+                                2022</span></h4>
+                        <p>Développeur Java/Python, je conçois des applications robustes et évolutives en maîtrisant les
+                            principes
+                            de la programmation orientée objet. Grâce à Java et ses frameworks modernes, je suis capable
+                            de
+                            développer des solutions allant des applications web aux projets mobiles Android, avec une
+                            attention particulière à la performance et à la fiabilité</p>
+                    </div>
+                    <div class="experience">
+                        <h2>Développeur de bases de données</h2>
+                        <h4>Avered <span class="date">Fevrier, 2023</span> &#x26ac; <span class="date">Juin, 2025</span>
+                        </h4>
+                        <p>Je maîtrise la conception et la gestion de bases de données
+                            relationnelles et NoSQL. J’utilise des outils comme MySQL, PostgreSQL ou Firebase pour
+                            structurer, stocker et sécuriser les informations, garantissant ainsi des applications
+                            fiables,
+                            performantes et adaptées aux besoins des utilisateurs</p>
+                    </div>
+                    <div class="experience">
+                        <h2>Développeur Full-Stack</h2>
+                        <h4>VR-AI Entreprise <span class="date">Avril, 2025</span></span></h4>
+                        <p>Jeune développeur Web & Mobile Full Stack, je conçois des applications et sites complèts et
+                            modernes, du
+                            front‑end au back‑end. Passionné par l’innovation numérique, je maîtrise les bases des
+                            technologies web et mobiles pour créer des solutions performantes, accessibles et adaptées
+                            aux
+                            besoins des utilisateurs.</p>
+                    </div>
+                </section>
+
+                <h2>Ma <span class="colored">Contributions</span></h2>
+                <div class="divider ltr"></div>
+                <section class="contributions">
+                    <div class="wrapper">
+                        <activity-graph range-start="2021-01-01" range-end="2021-12-31" activity-levels="0,1,2,3,5"
+                            activity-data="2021-01-01,2021-01-01,2021-01-01,2021-01-01,2021-01-01,2021-01-02,2021-01-02,2021-01-02,2021-01-02,2021-01-02,2021-01-03,2021-01-03,2021-01-03,2021-01-04,2021-01-04,2021-01-04,2021-01-05,2021-01-05,2021-01-06,2021-01-06,2021-01-06,2021-01-06,2021-01-06,2021-01-07,2021-01-07,2021-01-08,2021-01-08,2021-01-08,2021-01-09,2021-01-11,2021-01-11,2021-01-11,                        2021-01-11,2021-01-11,2021-01-12,2021-01-12,2021-01-12,2021-01-12,2021-01-15,2021-01-15,2021-01-16,2021-01-16,2021-01-16,2021-01-18,2021-01-18,2021-01-18,2021-01-18,2021-01-21,2021-01-21,2021-01-21,2021-01-21,2021-01-22,2021-01-22,2021-01-23,2021-01-23,2021-01-24,2021-01-24,2021-01-24,2021-01-24,2021-01-27,2021-01-27,2021-01-27,2021-01-27,2021-01-28,2021-01-28,2021-01-29,2021-01-29,2021-01-30,2021-01-30,2021-01-30,2021-01-30,2021-02-01,2021-02-01,2021-02-01,2021-02-01,2021-02-01,2021-02-02,2021-02-02,2021-02-02,2021-02-02,2021-02-02,2021-02-03,2021-02-03,2021-02-03,2021-02-04,2021-02-04,2021-02-04,2021-02-05,2021-02-05,2021-02-06,2021-02-06,2021-02-06,2021-02-06,2021-02-06,2021-02-07,2021-02-07,2021-02-08,2021-02-08,2021-02-08,2021-02-09,2021-02-11,2021-02-11,2021-02-11,                        2021-02-11,2021-02-11,2021-02-12,2021-02-12,2021-02-12,2021-02-12,2021-02-15,2021-02-15,2021-02-16,2021-02-16,2021-02-16,2021-02-18,2021-02-18,2021-02-18,2021-02-18,2021-02-21,2021-02-21,2021-02-21,2021-02-21,2021-02-22,2021-02-22,2021-02-23,2021-02-23,2021-02-24,2021-02-24,2021-02-24,2021-02-24,2021-02-27,2021-02-27,2021-02-27,2021-02-27,2021-02-28,2021-02-28,2021-02-29,2021-02-29,2021-02-30,2021-02-30,2021-02-30,2021-02-30,2021-03-01,2021-03-01,2021-03-01,2021-03-01,2021-03-01,2021-03-02,2021-03-02,2021-03-02,2021-03-02,2021-03-02,2021-03-03,2021-03-03,2021-03-03,2021-03-04,2021-03-04,2021-03-04,2021-03-05,2021-03-05,2021-03-06,2021-03-06,2021-03-06,2021-03-06,2021-03-06,2021-03-07,2021-03-07,2021-03-08,2021-03-08,2021-03-08,2021-03-09,2021-03-11,2021-03-11,2021-03-11,                        2021-03-11,2021-03-11,2021-03-12,2021-03-12,2021-03-12,2021-03-12,2021-03-15,2021-03-15,2021-03-16,2021-03-16,2021-03-16,2021-03-18,2021-03-18,2021-03-18,2021-03-18,2021-03-21,2021-03-21,2021-03-21,2021-03-21,2021-03-22,2021-03-22,2021-03-23,2021-03-23,2021-03-24,2021-03-24,2021-03-24,2021-03-24,2021-03-27,2021-03-27,2021-03-27,2021-03-27,2021-03-28,2021-03-28,2021-03-29,2021-03-29,2021-03-30,2021-03-30,2021-03-30,2021-03-30,2021-04-01,2021-04-01,2021-04-01,2021-04-01,2021-04-01,2021-04-02,2021-04-02,2021-04-02,2021-04-02,2021-04-02,2021-04-03,2021-04-03,2021-04-03,2021-04-04,2021-04-04,2021-04-04,2021-04-05,2021-04-05,2021-04-06,2021-04-06,2021-04-06,2021-04-06,2021-04-06,2021-04-07,2021-04-07,2021-04-08,2021-04-08,2021-04-08,2021-04-09,2021-04-11,2021-04-11,2021-04-11,                        2021-04-11,2021-04-11,2021-04-12,2021-04-12,2021-04-12,2021-04-12,2021-04-15,2021-04-15,2021-04-16,2021-04-16,2021-04-16,2021-04-18,2021-04-18,2021-04-18,2021-04-18,2021-04-21,2021-04-21,2021-04-21,2021-04-21,2021-04-22,2021-04-22,2021-04-23,2021-04-23,2021-04-24,2021-04-24,2021-04-24,2021-04-24,2021-04-27,2021-04-27,2021-04-27,2021-04-27,2021-04-28,2021-04-28,2021-04-29,2021-04-29,2021-04-30,2021-04-30,2021-04-30,2021-04-30,2021-05-01,2021-05-01,2021-05-01,2021-05-01,2021-05-01,2021-05-02,2021-05-02,2021-05-02,2021-05-02,2021-05-02,2021-05-03,2021-05-03,2021-05-03,2021-05-04,2021-05-04,2021-05-04,2021-05-05,2021-05-05,2021-05-06,2021-05-06,2021-05-06,2021-05-06,2021-05-06,2021-05-07,2021-05-07,2021-05-08,2021-05-08,2021-05-08,2021-05-09,2021-05-11,2021-05-11,2021-05-11,                        2021-05-11,2021-05-11,2021-05-12,2021-05-12,2021-05-12,2021-05-12,2021-05-15,2021-05-15,2021-05-16,2021-05-16,2021-05-16,2021-05-18,2021-05-18,2021-05-18,2021-05-18,2021-05-21,2021-05-21,2021-05-21,2021-05-21,2021-05-22,2021-05-22,2021-05-23,2021-05-23,2021-05-24,2021-05-24,2021-05-24,2021-05-24,2021-05-27,2021-05-27,2021-05-27,2021-05-27,2021-05-28,2021-05-28,2021-05-29,2021-05-29,2021-05-30,2021-05-30,2021-05-30,2021-05-30,2021-06-01,2021-06-01,2021-06-01,2021-06-01,2021-06-01,2021-06-02,2021-06-02,2021-06-02,2021-06-02,2021-06-02,2021-06-03,2021-06-03,2021-06-03,2021-06-04,2021-06-04,2021-06-04,2021-06-05,2021-06-05,2021-06-06,2021-06-06,2021-06-06,2021-06-06,2021-06-06,2021-06-07,2021-06-07,2021-06-08,2021-06-08,2021-06-08,2021-06-09,2021-06-11,2021-06-11,2021-06-11,                        2021-06-11,2021-06-11,2021-06-12,2021-06-12,2021-06-12,2021-06-12,2021-06-15,2021-06-15,2021-06-16,2021-06-16,2021-06-16,2021-06-18,2021-06-18,2021-06-18,2021-06-18,2021-06-21,2021-06-21,2021-06-21,2021-06-21,2021-06-22,2021-06-22,2021-06-23,2021-06-23,2021-06-24,2021-06-24,2021-06-24,2021-06-24,2021-06-27,2021-06-27,2021-06-27,2021-06-27,2021-06-28,2021-06-28,2021-06-29,2021-06-29,2021-06-30,2021-06-30,2021-06-30,2021-06-30,
+                        2021-01-01,2021-07-01,2021-07-01,2021-07-01,2021-07-01,2021-07-02,2021-07-02,2021-07-02,2021-07-02,2021-07-02,2021-07-03,2021-07-03,2021-07-03,2021-07-04,2021-07-04,2021-07-04,2021-07-05,2021-07-05,2021-07-06,2021-07-06,2021-07-06,2021-07-06,2021-07-06,2021-07-07,2021-07-07,2021-07-08,2021-07-08,2021-07-08,2021-07-09,2021-07-11,2021-07-11,2021-07-11,                        2021-07-11,2021-07-11,2021-07-12,2021-07-12,2021-07-12,2021-07-12,2021-07-15,2021-07-15,2021-07-16,2021-07-16,2021-07-16,2021-07-18,2021-07-18,2021-07-18,2021-07-18,2021-07-21,2021-07-21,2021-07-21,2021-07-21,2021-07-22,2021-07-22,2021-07-23,2021-07-23,2021-07-24,2021-07-24,2021-07-24,2021-07-24,2021-07-27,2021-07-27,2021-07-27,2021-07-27,2021-07-28,2021-07-28,2021-07-29,2021-07-29,2021-07-30,2021-07-30,2021-07-30,2021-07-30,2021-07-01,2021-07-01,2021-07-01,2021-07-01,2021-07-01,2021-07-02,2021-07-02,2021-07-02,2021-07-02,2021-07-02,2021-07-03,2021-07-03,2021-07-03,2021-07-04,2021-07-04,2021-07-04,2021-07-05,2021-07-05,2021-07-06,2021-07-06,2021-07-06,2021-07-06,2021-07-06,2021-07-07,2021-07-07,2021-07-08,2021-07-08,2021-07-08,2021-07-09,2021-07-11,2021-07-11,2021-07-11,                        2021-07-11,2021-07-11,2021-07-12,2021-07-12,2021-07-12,2021-07-12,2021-07-15,2021-07-15,2021-07-16,2021-07-16,2021-07-16,2021-07-18,2021-07-18,2021-07-18,2021-07-18,2021-07-21,2021-07-21,2021-07-21,2021-07-21,2021-07-22,2021-07-22,2021-07-23,2021-07-23,2021-07-24,2021-07-24,2021-07-24,2021-07-24,2021-07-27,2021-07-27,2021-07-27,2021-07-27,2021-07-28,2021-07-28,2021-07-29,2021-07-29,2021-07-30,2021-07-30,2021-07-30,2021-07-30,2021-08-01,2021-08-01,2021-08-01,2021-08-01,2021-08-01,2021-08-02,2021-08-02,2021-08-02,2021-08-02,2021-08-02,2021-08-03,2021-08-03,2021-08-03,2021-08-04,2021-08-04,2021-08-04,2021-08-05,2021-08-05,2021-08-06,2021-08-06,2021-08-06,2021-08-06,2021-08-06,2021-08-07,2021-08-07,2021-08-08,2021-08-08,2021-08-08,2021-08-09,2021-08-11,2021-08-11,2021-08-11,                        2021-08-11,2021-08-11,2021-08-12,2021-08-12,2021-08-12,2021-08-12,2021-08-15,2021-08-15,2021-08-16,2021-08-16,2021-08-16,2021-08-18,2021-08-18,2021-08-18,2021-08-18,2021-08-21,2021-08-21,2021-08-21,2021-08-21,2021-08-22,2021-08-22,2021-08-23,2021-08-23,2021-08-24,2021-08-24,2021-08-24,2021-08-24,2021-08-27,2021-08-27,2021-08-27,2021-08-27,2021-08-28,2021-08-28,2021-08-29,2021-08-29,2021-08-30,2021-08-30,2021-08-30,2021-08-30,2021-09-01,2021-09-01,2021-09-01,2021-09-01,2021-09-01,2021-09-02,2021-09-02,2021-09-02,2021-09-02,2021-09-02,2021-09-03,2021-09-03,2021-09-03,2021-09-04,2021-09-04,2021-09-04,2021-09-05,2021-09-05,2021-09-06,2021-09-06,2021-09-06,2021-09-06,2021-09-06,2021-09-07,2021-09-07,2021-09-08,2021-09-08,2021-09-08,2021-09-09,2021-09-11,2021-09-11,2021-09-11,                        2021-09-11,2021-09-11,2021-09-12,2021-09-12,2021-09-12,2021-09-12,2021-09-15,2021-09-15,2021-09-16,2021-09-16,2021-09-16,2021-09-18,2021-09-18,2021-09-18,2021-09-18,2021-09-21,2021-09-21,2021-09-21,2021-09-21,2021-09-22,2021-09-22,2021-09-23,2021-09-23,2021-09-24,2021-09-24,2021-09-24,2021-09-24,2021-09-27,2021-09-27,2021-09-27,2021-09-27,2021-09-28,2021-09-28,2021-09-29,2021-09-29,2021-09-30,2021-09-30,2021-09-30,2021-09-30,2021-10-01,2021-10-01,2021-10-01,2021-10-01,2021-10-01,2021-10-02,2021-10-02,2021-10-02,2021-10-02,2021-10-02,2021-10-03,2021-10-03,2021-10-03,2021-10-04,2021-10-04,2021-10-04,2021-10-05,2021-10-05,2021-10-06,2021-10-06,2021-10-06,2021-10-06,2021-10-06,2021-10-07,2021-10-07,2021-10-08,2021-10-08,2021-10-08,2021-10-09,2021-10-11,2021-10-11,2021-10-11,                        2021-10-11,2021-10-11,2021-10-12,2021-10-12,2021-10-12,2021-10-12,2021-10-15,2021-10-15,2021-10-16,2021-10-16,2021-10-16,2021-10-18,2021-10-18,2021-10-18,2021-10-18,2021-10-21,2021-10-21,2021-10-21,2021-10-21,2021-10-22,2021-10-22,2021-10-23,2021-10-23,2021-10-24,2021-10-24,2021-10-24,2021-10-24,2021-10-27,2021-10-27,2021-10-27,2021-10-27,2021-10-28,2021-10-28,2021-10-29,2021-10-29,2021-10-30,2021-10-30,2021-10-30,2021-10-30,
+                            "></activity-graph>
+                    </div>
+                </section>
+                <h2 id="projects">Mes <span class="colored">Projets</span></h2>
+                <div class="divider ltr"></div>
+
+
+                <section class="projects">
+                    <div class="project">
+                        <img src="img/project-1.png" alt="">
+                        <h3>Projet <span class="colored">SyEfarm</span></h3>
+                    </div>
+                    <div class="project">
+                        <img src="img/project-2.png" alt="">
+                        <h3>Projet <span class="colored">VR-AI</span></h3>
+                    </div>
+                    <div class="project">
+                        <img src="img/project-3.png" alt="">
+                        <h3>Projet <span class="colored">Plateforme E-commerciale</span></h3>
+                    </div>
+                    <div class="project">
+                        <img src="img/project-4.png" alt="">
+                        <h3>Projet <span class="colored">GET INTO PC</span></h3>
+                    </div>
+                </section>
+
+                <!---blogs--->
+                <h2 id="blogs">Mon <span class="colored">Blog</span></h2>
+                <div class="divider ltr"></div>
+
+                <section class="blogs">
+                    <div class="blog-box">
+                        <img src="img/blog-1.jpeg" alt="">
+                        <div>
+                            <h3>Outils de Conception Web </h3>
+                            <p>Les outils de conception web incluent des éditeurs de code comme VS Code pour
+                                programmer efficacement.
+                                On utilise aussi des frameworks tels que Bootstrap ou Tailwind CSS pour créer
+                                des interfaces responsives.
+                                Enfin, des logiciels comme Figma ou WordPress facilitent la conception visuelle et
+                                la mise en ligne rapide.
+                            </p>
+                            <span class="link"><a href="https://targettrend.com/fr/web-design-tools/" target="_blank">En savoir plus</a><ion-icon
+                                    name="caret-forward-outline"></ion-icon></span>
+                        </div>
+                    </div>
+
+                    <div class="blog-box">
+                        <img src="img/blog-2.jpeg" alt="">
+                        <div>
+                            <h3>Comment développer un plugin WordPress</h3>
+                            <p>Un plugin WordPress se développe en quatre étapes essentielles :
+                                On commence par créer un dossier et un fichier PHP principal dans
+                                wp-content/plugins. Ensuite, on ajoute l’en-tête du plugin pour que WordPress le
+                                reconnaisse. Puis, on écrit la logique en utilisant les hooks (actions et
+                                filters) afin d’ajouter la fonctionnalité souhaitée. Enfin, on active le plugin
+                                depuis le tableau de bord et on teste son bon fonctionnement
+                            </p>
+                            <span class="link"><a href="https://www.wpbeginner.com/fr/wp-tutorials/how-to-create-a-wordpress-plugin/" target="_blank">En savoir plus</a><ion-icon
+                                    name="caret-forward-outline"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <img src="img/blog-3.jpeg" alt="">
+                        <div>
+                            <h3>Qu'est-ce que Bootstrap ? </h3>
+                            <p>Bootstrap est un framework front-end open-source créé par Twitter en
+                                2011.
+                                Il fournit des modèles HTML, CSS et JavaScript prêts à l’emploi pour
+                                concevoir des sites web modernes et responsives.
+                                Grâce à son système de grille et ses composants (boutons, formulaires,
+                                menus), il permet de développer rapidement des interfaces attractives et
+                                adaptées aux mobiles.
+                            </p>
+                            <span class="link"><a href="https://www.hostinger.com/fr/tutoriels/cest-quoi-bootstrap" target="_blank">En savoir plus</a><ion-icon
+                                    name="caret-forward-outline"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <img src="img/blog-4.jpeg" alt="">
+                        <div>
+                            <h3>Qu'est ce que le langage PHP</h3>
+                            <p>Le langage PHP est un langage de programmation libre créé en
+                                1995 par Rasmus Lerdorf.
+                                Il est principalement utilisé côté serveur pour générer des
+                                pages web dynamiques et interagir avec des bases de données.
+                                Multi‑plateforme et orienté objet, PHP reste l’un des piliers du
+                                développement web moderne grâce à sa simplicité et sa large
+                                communauté.
+                            </p>
+                            <span class="link"><a href="https://www.hostinger.com/fr/tutoriels/quest-ce-que-php" target="_blank">En savoir plus</a><ion-icon
+                                    name="caret-forward-outline"></ion-icon></span>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!---Temoignages--->
+                <br>
+                <h2>Mes <span class="colored">Témoignages</span></h2>
+                <div class="divider ltr"></div>
+
+                <section class="testimonials">
+                    <div class="testimonial-box">
+                        <h1>Que <span class="colored">Disent Les Clients de Moi</span></h1>
+                    </div>
+                    <div class="testimonial-box">
+                        <img src="img/testimonial-1.jpeg" alt="">
+                        <span>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </span>
+                        <h3>Claire Dubois</h3> <i> Manager en communication et relations publiques</i>
+                        <p>Travailler avec Romane a été une expérience remarquable. Sa capacité à transformer nos idées
+                            de communication en interfaces web claires et esthétiques a donné une nouvelle dimension à
+                            nos campagnes. Il comprend parfaitement l’importance de l’image et du message, et sait les
+                            traduire en design moderne et impactant.</p>
+                    </div>
+                    <div class="testimonial-box">
+                        <img src="img/testimonial-2.jpeg" alt="">
+                        <span>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </span>
+                        <h3>Julien Moreau</h3> <i> Manager en stratégie digitale</i>
+                        <p>Romane est un développeur web et mobile extrêmement fiable. J’ai été impressionné par sa
+                            maîtrise des frameworks et son sens de l’optimisation. Il ne se contente pas de coder : il
+                            pense stratégie, expérience utilisateur et performance. Ses solutions sont toujours adaptées
+                            aux besoins du projet et anticipent les évolutions digitales.</p>
+
+                    </div>
+                    <div class="testimonial-box">
+                        <img src="img/testimonial-3.jpeg" alt="">
+                        <span>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                        </span>
+                        <h3>Thomas Lefèvre</h3> <i> Responsable logistique et supply chain</i>
+                        <p>Dans mon domaine, la clarté et l’efficacité sont essentielles. Romane a conçu pour nous une
+                            plateforme intuitive qui simplifie la gestion des flux. Son approche méthodique et son souci
+                            du détail en font un partenaire précieux. Il sait écouter, analyser et proposer des
+                            solutions concrètes qui améliorent réellement notre quotidien.</p>
+
+                    </div>
+                </section>
+                <!---contact--->
+
+
+                <h2 id="contact">Me <span class="colored">Contacter</span></h2>
+                <div class="divider ltr"></div>
+
+
+                <section>
+                    <iframe class="map" width="100%" height="300" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.467765241147!2d1.149146974990209!3d6.2018564937859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTInMDYuNyJOIDHCsDA5JzA2LjIiRQ!5e0!3m2!1sfr!2stg!4v1764434476552!5m2!1sfr!2stg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <form action="#contact" class="contact">
+                        <div>
+                            <input type="text" class="input" name="Nom" placeholder="Votre Nom...">
+                        </div>
+                        <div>
+                            <input type="text" class="input" name="Prénom" placeholder="Votre Prénom...">
+                        </div>
+                           <div>
+                            <input type="email" class="input" name="email" placeholder="Votre Adresse Email...">
+                        </div>
+                        <div>
+                            <textarea name="subject" class="input" rows="4" placeholder="Votre Message..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
